@@ -36,6 +36,8 @@
             this.btCrear = new System.Windows.Forms.Button();
             this.btActualizar = new System.Windows.Forms.Button();
             this.btConsumirApi = new System.Windows.Forms.Button();
+            this.btBuscar = new System.Windows.Forms.Button();
+            this.tbBuscarID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,7 +105,7 @@
             // 
             // btConsumirApi
             // 
-            this.btConsumirApi.Location = new System.Drawing.Point(310, 269);
+            this.btConsumirApi.Location = new System.Drawing.Point(582, 64);
             this.btConsumirApi.Name = "btConsumirApi";
             this.btConsumirApi.Size = new System.Drawing.Size(113, 23);
             this.btConsumirApi.TabIndex = 7;
@@ -111,11 +113,31 @@
             this.btConsumirApi.UseVisualStyleBackColor = true;
             this.btConsumirApi.Click += new System.EventHandler(this.btConsumirApi_Click);
             // 
+            // btBuscar
+            // 
+            this.btBuscar.Location = new System.Drawing.Point(613, 126);
+            this.btBuscar.Name = "btBuscar";
+            this.btBuscar.Size = new System.Drawing.Size(100, 37);
+            this.btBuscar.TabIndex = 8;
+            this.btBuscar.Text = "Buscar";
+            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
+            // 
+            // tbBuscarID
+            // 
+            this.tbBuscarID.Location = new System.Drawing.Point(576, 179);
+            this.tbBuscarID.Name = "tbBuscarID";
+            this.tbBuscarID.Size = new System.Drawing.Size(212, 20);
+            this.tbBuscarID.TabIndex = 9;
+            this.tbBuscarID.TextChanged += new System.EventHandler(this.tbBuscarID_TextChanged);
+            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbBuscarID);
+            this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.btConsumirApi);
             this.Controls.Add(this.btActualizar);
             this.Controls.Add(this.btCrear);
@@ -142,6 +164,8 @@
         private System.Windows.Forms.Button btCrear;
         private System.Windows.Forms.Button btActualizar;
         private System.Windows.Forms.Button btConsumirApi;
+        private System.Windows.Forms.Button btBuscar;
+        private System.Windows.Forms.TextBox tbBuscarID;
     }
 }
 

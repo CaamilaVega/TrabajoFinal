@@ -16,5 +16,10 @@ namespace TrabajoFinalIntegrador1
         {
             InitializeComponent();
         }
+
+        private void btActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
